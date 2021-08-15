@@ -15,6 +15,10 @@ TARGET_OTA_ASSERT_DEVICE := olive,olivelite,olivewood,olives
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_olives
+TARGET_RECOVERY_DEVICE_MODULES := libinit_olives
+
 # Kernel
 TARGET_KERNEL_CONFIG := olive-perf_defconfig
 
