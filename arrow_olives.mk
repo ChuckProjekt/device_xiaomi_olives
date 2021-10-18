@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 720
+ARROW_GAPPS := true
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
