@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common WeebProject stuff.
 $(call inherit-product, vendor/weeb/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from olives device
