@@ -9,15 +9,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common xdroidsp stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT := 720
+XDROID_MAINTAINER := ChuckDXD
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := olives
-PRODUCT_NAME := lineage_olives
+PRODUCT_NAME := xdroid_olives
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8 / 8A / 8A Dual
