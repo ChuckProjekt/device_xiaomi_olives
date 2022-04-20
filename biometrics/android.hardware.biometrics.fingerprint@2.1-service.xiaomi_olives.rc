@@ -30,4 +30,9 @@ on post-fs-data
 
 on property:vendor.fingerprint.hwmdl=failed
     stop vendor.fps_hal
-    mount none /vendor/etc/permissions/blank.xml /vendor/etc/permissions/android.hardware.fingerprint.xml bind
+
+on property:vendor.fingerprint.hwmdl=fingerprint
+    setprop ro.boot.product.hardware.sku olive
+
+on property:vendor.fingerprint.hwmdl=gf_fingerprint
+    setprop ro.boot.product.hardware.sku olive
