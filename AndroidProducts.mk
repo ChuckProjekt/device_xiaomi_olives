@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_olives.mk
+    $(LOCAL_DIR)/cipher_olives.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_olives-user \
-    aosp_olives-userdebug \
-    aosp_olives-eng
+    cipher_olives-user \
+    cipher_olives-userdebug \
+    cipher_olives-eng
