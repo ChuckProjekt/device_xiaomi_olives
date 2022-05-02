@@ -16,7 +16,7 @@ TARGET_OTA_ASSERT_DEVICE := olive,olivelite,olivewood,olives
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := silont-olive_defconfig
+TARGET_KERNEL_CONFIG := olive-perf_defconfig
 
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
