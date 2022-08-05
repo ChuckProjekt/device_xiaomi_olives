@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common conquerOS stuff.
 $(call inherit-product, vendor/conquer/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 720
+CONQUER_BUILD_TYPE := OFFICIAL
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
